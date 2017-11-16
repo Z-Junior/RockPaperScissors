@@ -35,6 +35,7 @@ public class Game
 
         public abstract boolean beats(Type other);
 
+        @Nullable
         public static Type parseType(String value)
         {
             switch (value.toLowerCase())
