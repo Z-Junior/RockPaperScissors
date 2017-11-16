@@ -3,7 +3,6 @@
  * @since 16 November 2017
  */
 
-import org.jetbrains.annotations.Nullable;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -35,7 +34,6 @@ public class Game
 
         public abstract boolean beats(Type other);
 
-        @Nullable
         public static Type parseType(String value)
         {
             switch (value.toLowerCase())
@@ -88,7 +86,6 @@ public class Game
         return SCAN.nextLine();
     }
 
-    @Nullable
     public static Type getRandomMove()
     {
         int iRandom = RANDOM.nextInt(3) + 1;
