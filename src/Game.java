@@ -37,9 +37,7 @@ public class Game
 
         public static Type parseType(String value)
         {
-            String sCompare = value.toLowerCase();
-
-            switch (sCompare)
+            switch (value.toLowerCase())
             {
                 case "rock":
                     return Rock;
